@@ -1,0 +1,234 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Oswald',sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Oswald',sans-serif;
+}
+
+.bg-modal {
+  width: 100%;
+  height: 100%;
+  background-color: #111111;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Oswald',sans-serif;
+  display: none;
+}
+
+.modal-content {
+  width: 42%;
+  height: 315px;
+  background-color: #02ccba;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  color: #000;
+  position: relative;
+}
+
+.close-modal {
+  padding: 5px 14px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.close-modal {
+  background-color: #000;
+  color: #02ccba;
+}
+
+.modalrate {
+  display: flex;
+  justify-content: center;
+}
+
+.modalrate .stars {
+  display: flex;
+  list-style: none;
+  color: yellow;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: 'Oswald',sans-serif;
+  font-weight: 300;
+}
+
+.deck {
+    width: 660px;
+    min-height: 680px;
+    background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 2em;
+}
+
+.deck .card {
+    height: 125px;
+    width: 125px;
+    background: #2e3d49;
+    font-size: 0;
+    color: #000;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+    transition: all 0.5s;
+}
+
+.deck .card.open {
+    transform: rotateY(0);
+    background: #02b3e4;
+    cursor: default;
+}
+
+.deck .card.show {
+    font-size: 33px;
+}
+
+.deck .card.match {
+    transform: rotate(360deg);
+    cursor: default;
+    background: #02ccba;
+    font-size: 33px;
+}
+
+.score-panel {
+  text-align: left;
+  width: 35%;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.score-panel .stars {
+  margin: 0;
+  padding: 0;
+  margin: 0 5px 0 0;
+  display: inline-block;
+}
+
+.score-panel .stars li {
+  list-style: none;
+  display: inline-block;
+}
+
+.score-panel .reset {
+  float: right;
+  cursor: pointer;
+}
+
+.bg-modal {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: 'Oswald',sans-serif;
+  display: none;
+}
+
+.modal-content {
+  width: 45%;
+  height: 300px;
+  background-color: #02ccba;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  color: #000;
+  position: relative;
+}
+
+.close-modal {
+  padding: 5px 13px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.close-modal:hover {
+  background-color: #000;
+  color: #02ccba;
+}
+
+.modalrate {
+  display: flex;
+  justify-content: center;
+}
+
+.modalrate .stars {
+  display: flex;
+  list-style: none;
+  color: yellow;
+}
+
+
+footer {
+  font-weight: bold;
+  font-family: 'Oswald',sans-serif;
+}
+
+@media screen and (max-width: 900px) {
+  .card_frame {
+    width: 50vw;
+    height: 50vh;
+    padding: 0.5em 1em;
+    margin: 0 0 1.5em;
+  }
+
+  .score-panel {
+    text-align: left;
+    width: 48%;
+    font-size: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .frame.card .card {
+    height: calc((100% / 4) - 5px);
+    width: calc((100% / 4) - 5px);
+  }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matching Game</title>
+    <meta name="description" content="">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Memory Game</h1>
+        </header>
+
+        <section class="score-panel">
+            <ul class="stars">
+                <li>
+                    <i class="fa fa-star rating"></i>
+                </li>
+                <li>
+                    <i class="fa fa-star rating"></i>
+                </li>
+                <li>
+                    <i class="fa fa-star rating"></i>
+                </li>
+            </ul>
+
+            <div class="moves">0 Moves</div>
+
+            <div class="time">Time: 00:00</div>
+
+            <div class="reset">
+                <i class="fa fa-repeat"></i>
+            </div>
+        </section>
+
+        <ul class="deck">
+        </ul>
+
+        
+        <div class="bg-modal">
+            <div class="modal-content">
+                <h2>You Solved the Puzzle!!</h2>
+                <h3 class="modal-moves">Moves:</h3>
+                <h3 class="modal-time">Time:</h3>
+                <div class="modalrate">
+                    <h3 class="modal-rating">Your Score:</h3>
+                    <ul class="stars">
+                        <li>
+                            <i class="fa fa-star modalRating"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-star modalRating"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-star modalRating"></i>
+                        </li>
+                    </ul>
+                </div>
+                <hr>
+                <br>
+                <a href="" class="close-modal">Wanna Try Again?</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>Copyright © 2018-2019 Jason Kim</p>
+        </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
